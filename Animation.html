@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation with CSS</title>
+    <style media="screen">
+
+      body {
+        background-color: #EDD1FF;
+        animation-name: dude;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+@keyframes dude {
+  0%   {background-color: #FFCCB5;}
+  25%  {background-color: #FFC6CE;}
+  50%  {background-color: #FFD6FA;}
+  100% {background-color: #EDD1FF;}
+}
+
+@keyframes example {
+  0%   {background-color: #54457F;}
+  25%  {background-color: #F56476;
+  border-radius: 16%}
+  50%  {background-color: #E43F6F;
+  Border-radius: 32%}
+  100% {background-color: #BE3E82;
+  border-radius: 50%}
+}
+
+#box {
+  width: 250px;
+  height: 100px;
+  background-color: violet;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:50%;
+    background:coral;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:0 50% 0 0;
+    background:indianred;
+    transform:rotate(90deg);
+  }
+  75%  {
+    border-radius:0 0 50% 0;
+    background:lightcoral;
+    transform:rotate(135deg);
+  }
+  100% {
+    border-radius:50%;
+    background:darksalmon;
+    transform:rotate(180deg);
+  }
+}
+
+#lol {
+  width: 100px;
+  height: 100px;
+  animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+
+@keyframes why {
+  0%   {background-color: #54457F;}
+  25%  {background-color: #F56476;
+  border-radius: 16%}
+  50%  {background-color: #E43F6F;
+  Border-radius: 32%}
+  100% {background-color: #BE3E82;
+  border-radius: 50%}
+}
+
+#boy {
+  width: 200px;
+  height: 100px;
+  background-color: violet;
+  animation-name: why;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes why {
+  0%   {background-color: #54457F;}
+  25%  {background-color: #F56476;
+  border-radius: 16%}
+  50%  {background-color: #E43F6F;
+  Border-radius: 32%}
+  100% {background-color: #BE3E82;
+  border-radius: 50%}
+}
+
+#dog {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  animation-name: why;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <div id="lol"></div>
+    <div id="boy"></div>
+    <div id="dog"></div>
+
+  </body>
+</html>
