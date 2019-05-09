@@ -6,6 +6,29 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette|Fredoka+One" rel="stylesheet">
 <style>
 
+body {background:#C9F0FF;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 5;
+    letter-spacing: .8px;
+  }
+
+.Header h1 {text-align: center;}
+
+.Nav { grid-area: Nav; background:  #F4BBD3;
+height: 20%;
+color: white;}
+
+
+
+/* below is for desktop */
+@media only screen and (min-width: 800px) {
+
+
+  .grid{
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .grid-container {
     display: grid;
@@ -45,20 +68,16 @@ img {width: 300px;
 
   .Footer li {display: inline-block;}
 
-  body {background: #E6EBE0;
-    color: white;
-    font-family: 'Fredoka One', cursive;
-    font-weight: 5;
-    letter-spacing: .8px;
-  }
+}
 
 </style>
 
   </head>
   <body>
     <div class="grid-container">
-  <div class="Header"><header class="clearfix">
+  <div class="Header">
     <h1>Seahorse Serenity</h1></div>
+
   <div class="Nav">
     <ul>
   <li><a href="#">-Seahorse Home</a></li>
@@ -72,8 +91,6 @@ img {width: 300px;
   <div class="Article">
     <section>
       <h1>SEAHORSE FACTS</h1>
-      </section>
-<section>
   <h2>Name</h2>
 <p>The Latin name for seahorse is Hippocampus which means "Horse Caterpillar"</p>
   </section>
