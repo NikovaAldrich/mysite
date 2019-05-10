@@ -13,13 +13,28 @@ body {background:#C9F0FF;
     letter-spacing: .8px;
   }
 
+  .Header { grid-area: Header; background: #36C9C6;
+  color: #C9F0FF;
+  }
+
 .Header h1 {text-align: center;}
 
 .Nav { grid-area: Nav; background:  #F4BBD3;
-height: 20%;
+height: 40%;
+width: 225px;
 color: white;}
 
+.Article {
+    background: #9BC1BC;
+    padding: 17px;
+    text-align: center;
+}
 
+.Footer { grid-area: Footer; Background: #C9F0FF; color: white;}
+
+.Footer ul {list-style-type: none; margin: 0; padding: 0;}
+
+.Footer li {display: inline-block;}
 
 /* below is for desktop */
 @media only screen and (min-width: 800px) {
@@ -41,15 +56,18 @@ color: white;}
 
   .Header { grid-area: Header; background: #36C9C6;
   color: #C9F0FF;
+  height: ;
 }
 
   .Nav { grid-area: Nav; background:  #F4BBD3;
-  height: 20%;
+  height: 150px;
+  width: 225px;
 color: white;}
 
   .Article {
       background: #9BC1BC;
       padding: 17px;
+      text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -62,7 +80,7 @@ img {width: 300px;
     border: 5px solid white;
     border-radius: 3%;
   }
-  .Footer { grid-area: Footer; Background: #C9F0FF; color: white;}
+  .Footer { grid-area: Footer; Background: #C9F0FF; color: white; text-align: center;}
 
   .Footer ul {list-style-type: none; margin: 0; padding: 0;}
 
@@ -78,6 +96,8 @@ img {width: 300px;
   <div class="Header">
     <h1>Seahorse Serenity</h1></div>
 
+
+
   <div class="Nav">
     <ul>
   <li><a href="#">-Seahorse Home</a></li>
@@ -91,6 +111,7 @@ img {width: 300px;
   <div class="Article">
     <section>
       <h1>SEAHORSE FACTS</h1>
+      <div class="img"><img src="seasea.jpg" alt=""></div>
   <h2>Name</h2>
 <p>The Latin name for seahorse is Hippocampus which means "Horse Caterpillar"</p>
   </section>
@@ -125,7 +146,6 @@ img {width: 300px;
 
 
 
-    <div class="img"><img src="sea-dragon_1920x1733.jpg" alt=""></div>
   </div>
   <div class="Footer"><ul>
   <li>Seahorse Friends:</li>
