@@ -1,0 +1,50 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: #F4442E;
+}
+
+h2 {
+  color: #EF6204;
+}
+
+h3 {
+  color: #F18F01;
+}
+p {
+  color: #FFB759;
+}
+
+nav {
+color: #F5CB5C;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "nav article ." "footer footer footer";
+}
+
+.header { grid-area: header;
+  background: #F5CB5C;
+text-align: center;}
+
+.nav { grid-area: nav;
+  background: #F4442E;
+text-align: left;
+width: 100%
+}
+
+.article { grid-area: article;
+  background: #02010A;
+text-align: center;
+width: 200%
+}
+
+.footer { grid-area: footer;
+text-align: center;
+}
