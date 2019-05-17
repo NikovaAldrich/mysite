@@ -4,6 +4,7 @@ body {
 
 h1 {
   color: #F4442E;
+
 }
 
 h2 {
@@ -25,26 +26,31 @@ color: #F5CB5C;
 .grid-container {
   display: grid;
   grid-template-columns: .5fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: .25fr 1fr .25fr;
   grid-template-areas: "header header header" "nav article ." "footer footer footer";
 }
 
 .header { grid-area: header;
   background: #F5CB5C;
-text-align: center;}
+text-align: center;
+height: 100%;}
 
 .nav { grid-area: nav;
   background: #F4442E;
 text-align: left;
-width: 100%
+width: 100%;
+height: 45%
 }
 
 .article { grid-area: article;
   background: #02010A;
 text-align: center;
-width: 200%
+width: 200%;
+height: 100%;
+Padding: 5%;
 }
 
 .footer { grid-area: footer;
 text-align: center;
+background: #052F5F;
 }
